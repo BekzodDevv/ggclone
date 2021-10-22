@@ -54,6 +54,7 @@ export default function Home() {
           googlelogo/2x/
           googlelogo_color_272x92dp.png"
           height={100}
+          loading="lazy"
           width={300}
           alt="logo"
         />
