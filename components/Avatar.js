@@ -1,6 +1,6 @@
 function Avatar({url, className}) {
     return (
-        <div>
+       
             <img 
             src={url} 
             alt="avatar"
@@ -10,7 +10,7 @@ function Avatar({url, className}) {
             loading="lazy"
             />
             
-        </div>
+        
     )
 }
 

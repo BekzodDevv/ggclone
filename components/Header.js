@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import { useRouter } from "next/router";
 import { useRef } from "react";
 
@@ -26,7 +26,7 @@ function Header() {
     return (
         <header className="sticky top-0 bg-white">
             <div className="flex w-full p-6 items-center">
-                <Image
+                <img
                     src="https://www.google.co.uk/images/branding/googlelogo/2x/
                 googlelogo_color_272x92dp.png"
                     height={40}
@@ -42,6 +42,7 @@ function Header() {
                         ref={searchInputRef}
                         className="flex-grow w-full focus:outline-none"
                         type="text"
+                        defaultValue={router.query.term}
                     />
 
                     <XIcon
@@ -56,7 +57,7 @@ function Header() {
                         Search
                     </button>
                 </form>
-                <Avatar className="ml-auto " url="https://coaching.papareact.com/ai9" />
+                <Avatar className="ml-auto" url="https://coaching.papareact.com/ai9" />
             </div>
 
             <HeaderOptions />
