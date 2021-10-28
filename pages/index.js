@@ -52,9 +52,9 @@ export default function Home() {
         <Image
           src="https://www.google.co.uk/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
           height={100}
-          loading="lazy"
           width={300}
-          alt="logo"
+          loading="lazy"
+          alt="logosss"
         />
         <div className="flex w-full mt-5 hover:shadow-lg focus-within:shadow-lg
         max-w-md rounded-full border border-gray-200 px-5 py-3 items-center

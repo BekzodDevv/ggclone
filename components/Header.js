@@ -1,4 +1,4 @@
-
+import Image from "next/image";
 import { useRouter } from "next/router";
 import { useRef } from "react";
 
@@ -26,11 +26,11 @@ function Header() {
     return (
         <header className="sticky top-0 bg-white">
             <div className="flex w-full p-6 items-center">
-                <img
-                    src="https://www.google.co.uk/images/branding/googlelogo/2x/
-                googlelogo_color_272x92dp.png"
+                <Image
+                    src="https://www.google.co.uk/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
                     height={40}
                     width={120}
+                    loading="lazy"
                     onClick={() => router.push("/")}
                     className="cursor-pointer"
                     alt="logo"
